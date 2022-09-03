@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(253, 165, 2);
+}
+
+
+
+.container {
+    width: 700px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.timer {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.block {
+    width: 150px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0 auto;
+}
+
+
+.time {
+    background-color: #001e6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    font-size: 95px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;;
+    border-radius: 50%;
+}
+
+.start {
+cursor: pointer;
+height:50px;
+width:150px;
+border-radius: 10%;
+display: inline-block;
+color: white;
+text-decoration: none;
+padding: .5em 2em;
+outline: none;
+border-width: 2px 0;
+border-style: solid none;
+border-color: #FDBE33 #000 #D77206;
+border-radius: 6px;
+background: linear-gradient(#F3AE0F, #E38916) #E38916;
+transition: 0.2s;
+}
+
+.start:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+.start:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+.pause {
+cursor: pointer;
+height:50px;
+width:150px;
+border-radius: 10%;
+display: inline-block;
+color: white;
+text-decoration: none;
+padding: .5em 2em;
+outline: none;
+border-width: 2px 0;
+border-style: solid none;
+border-color: #FDBE33 #000 #D77206;
+border-radius: 6px;
+background: linear-gradient(#F3AE0F, #E38916) #E38916;
+transition: 0.2s;
+}
+    
+    .pause:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+    .pause:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+.stop {
+    cursor: pointer;
+    height:50px;
+    width:150px;
+    border-radius: 10%;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+    }
+        
+        .stop:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+        .stop:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+    
+    
+.buttons {
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.glav {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.neon {
+    margin: 0 auto;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+}
+
+p {
+    font-size: 3rem;    
+    margin-left: 130px;
+    margin-top: 250px;
+}
+
+    @keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(236, 190, 39),
+        0 0 80px rgb(222, 236, 17),
+        0 0 90px rgb(236, 240, 40),
+        0 0 100px rgb(234, 238, 19),
+        0 0 150px rgb(255, 188, 3);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
